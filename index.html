@@ -1,17 +1,23 @@
 <!-- plik index.html -->
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Portfolio | Kama Andruszczak</title>
+        
+        <link rel="icon" href="images/kama-img.jpg">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Raleway">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
     </head>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <body data-spy="scroll" data-target="#navbar-portfolio">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-portfolio">
         <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -25,58 +31,55 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><p>Kamila Andruszczak | Portfolio</p></li>
+                    <li><a href="#top">Kamila Andruszczak | Portfolio</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href=".About-me">About Me</a></li>
-                    <li><a href=".works">About My Work</a></li>
+                    <li><a href="#About-me">About Me</a></li>
+                    <li><a href="#works">About My Work</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <body>
+        <div id="top"></div>
         <div class="jumbotron">
             <div class="container">
-                <h1>Life shrinks</h1>
-                <h1>or expands in</h1>
-                <h1>proportion</h1>
-                <h1>to one's courage</h1>
+                <h1>Life shrinks or expands in proportion to one's courage</h1>
                 <p>Anais Nin</p>
             </div>
             <div class="skewmask-block">
             </div>
         </div>
-        <div class="works">
+        <div class="works" id="works">
             <div class="container">
                 <h1>My works</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
                         <figure class="effect-lily">
-                            <a href="#"><img src="images/html.jpg" alt="html"/></a>
+                            <a href="http://www.melanotanaus.com.au/" target="_blank"><img src="images/wordpress%20melanotan.jpg" alt="wordpress corpo"/></a>
 						<figcaption>
 							<div>
-								<h2>FIRST HTML My first, made from scratch html website <i class="fa fa-long-arrow-right"></i></h2>
-							</div>
-						</figcaption>			
-					</figure>
-                    </div>
-                    <div class="col-sm-4">
-                        <figure class="effect-lily">
-                            <a href="#"><img src="images/wordpress%20melanotan.jpg" alt="wordpress corpo"/></a>
-						<figcaption>
-							<div>
-								<h2>WORDPRESS Beauty website <i class="fa fa-long-arrow-right"></i></h2>
+								<h2>WORDPRESS + Bootstrap + Woocommerce Beauty website <i class="fa fa-long-arrow-right"></i></h2>
 							</div>
 						</figcaption>			
 					</figure>
                     </div>
                     <div class="col-sm-4 last-col-photo">
                         <figure class="effect-lily">
-                            <a href="#"><img src="images/wordpress%20joga.jpg" alt="wordpress corpo"/></a>
+                            <a href="http://yoga-mindset.pl/" target="_blank"><img src="images/wordpress%20joga.jpg" alt="wordpress yoga"/></a>
 						<figcaption>
 							<div>
-								<h2>WORDPRESS Yoga teacher website <i class="fa fa-long-arrow-right"></i></h2>
+								<h2>WORDPRESS + Bootstrap Yoga teacher website <i class="fa fa-long-arrow-right"></i></h2>
+							</div>
+						</figcaption>			
+					</figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="effect-lily">
+                            <a href="https://project-8264.kodilla.com/" target="_blank"><img src="images/html.jpg" alt="html"/></a>
+						<figcaption>
+							<div>
+								<h2>FIRST HTML+CSS My first, made from scratch html website <i class="fa fa-long-arrow-right"></i></h2>
 							</div>
 						</figcaption>			
 					</figure>
@@ -87,7 +90,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <figure class="effect-lily">
-                            <a href="#"><img src="images/kanban-table.jpg" alt="JS object project"/></a>
+                            <a href="https://kamaaan.github.io/trello_me/" target="_blank"><img src="images/kanban-table.jpg" alt="JS object project"/></a>
 						<figcaption>
 							<div>
 								<h2>JAVASCRIPT Working with objects - Kanban table <i class="fa fa-long-arrow-right"></i></h2>
@@ -97,20 +100,20 @@
                     </div>
                     <div class="col-sm-4">
                         <figure class="effect-lily">
-						<img src="images/cats_playing.jpg" alt="JavaScript game"/>
+                        <a href="https://kamaaan.github.io/Game/" target="_blank"><img src="images/cats_playing.jpg" alt="JavaScript game"/></a>
 						<figcaption>
 							<div>
-								<h2>JAVASCRIPT Simple Game - play with cats! <i class="fa fa-long-arrow-right"></i></h2>
+								<h2>JAVASCRIPT Simple Game - play with cats<i class="fa fa-long-arrow-right"></i></h2>
 							</div>
 						</figcaption>			
 					</figure>
                     </div>
                     <div class="col-sm-4 last-col-photo">
                         <figure class="effect-lily">
-                            <a href="#"><img src="images/bootstrap_components.jpg" alt="Bootstrap"/></a>
+                            <a href="#" target="_blank"><img src="images/Wordpress-New.jpg" alt="Bootstrap"/></a>
 						<figcaption>
 							<div>
-								<h2>BOOTSTRAP Practising Bootstrap and JS <i class="fa fa-long-arrow-right"></i></h2>
+								<h2>WP+BOOTSTRAP - developing a Wordpress Theme from scratch - in progres <i class="fa fa-long-arrow-right"></i></h2>
 							</div>
 						</figcaption>			
 					</figure>
@@ -170,7 +173,7 @@
                 </div>
             </div>
         </div>
-        <div class="About-me">
+        <div class="About-me" id="About-me">
             <div class="skewmask-block-footer">
             </div>
             <div class="container">
@@ -180,15 +183,22 @@
                         <h2>My name is Kama</h2>
                     </div>
                     <div class="col-sm-6 col-main-text">
-                        <p>I would like to tell you briefly about me and my work experience. Originally from Warsaw, Poland but now residing in Toronto.
-                        I'm looking to grow personally and professionally in Canada.<wbr>I have over 8 years of experience in digital marketing projects in media, agency and client site.  My favourite part was always digital solutions and design: websites, shops, application, landing pages, mailings, how to build a perfect tool to meet client needs, create something beautiful and have fun? <wbr>I decided to develop right skills. I started with Wordpress websites for small companies as a freelancer and now build them for over a year.It wasn’t enough, that's why I finishedFrontend developer bootcamp.<wbr>It gives me a lot of fresh knowledge , but also even more enthusiasm for Frontend job! I want to be involved in projects that I can be proud of, join an amazing team and start real Frontend development career. If you're interested in helping me make this happen, let's get in touch.<wbr>In private a big fan of sci-fi movies and fantasy books (mostly polish authors), yoga freak and cats lover. Travel 4 continents, visited 25 countries and still looking for more!</p>
+                        <p>I would like to tell you briefly about me and my work experience. Originally from Warsaw, Poland, but now residing in Toronto, I'm looking to grow personally and professionally in Canada.</p>
+
+                        <p>I have over 8 years of experience in the media, agency, and client side of digital marketing projects. My favourite part has always been in creating digital solutions and design: websites, shops, applications, landing pages, mailings. It’s always been about how to build a perfect tool to meet the client’s needs while creating something beautiful and having fun.</p>
+ 
+                        <p>I decided to develop the right skills. I started with WordPress websites for small companies as a freelancer and now have built them for over a year. It wasn’t enough, so that's why I just finished Frontend developer bootcamp. It gave me a lot of fresh knowledge, but also even more enthusiasm for Frontend jobs!</p>
+                            
+                        <p>I want to be involved in projects that I can be proud of, join an amazing team, and start a real Frontend development career. If you're interested in helping me make this happen, let's get in touch.</p>
+ 
+                        <p>In private, I’m a big fan of sci-fi movies and fantasy books (mostly Polish authors), yoga freak and a cat lover. I’ve travelled across 4 continents, visited 25 countries and I’m still looking for more!</p>
 
                         <p>*Note: one year working visa (starts at march 2017)</p>
                     </div>
                 </div>
             </div>
             <div class="container container-button">
-                <a class="btn btn-default" href="#">
+                <a class="btn btn-default" href="file:///Users/Kamcia/Desktop/portfolio/portfolio/images/Resume_Andruszczak.Kamila.Frontend.Developer-portfolio.pdf" target="_blank">
                 <i class="fa fa-file-text-o fa-4x"></i>
                 <p>Resume</p></a>
             </div>
@@ -201,13 +211,13 @@
                     <div class="col-sm-4 kama-photo">
                     </div>
                     <div class="col-sm-8 contact-form">
-                        <form action="mailto:andruszczak.kamila@gmail.com" method="post" enctype="text/plain">
-                            <p>Name: <input type="text" name="name">
+                        <form method="post" action="kontakt.php">
+                            <p>Name: <input name="name">
                             E-mail:
-                            <input type="text" name="mail"></p>
+                            <input name="email" type="email"></p>
                             <p>Comment:
-                            <input type="text" name="comment" size="50"></p>
-                            <p class="submit"><input type="submit" value="Send"></p>
+                            <textarea name="message"></textarea></p>
+                            <p class="submit"><input id="submit" name="submit" type="submit" value="Send"></p>
                         </form>
                     </div>
                 </div>
@@ -227,7 +237,7 @@
          </div>
         <div class="footer-end">
             <div class="container">
-                <p>Thank you || @allRights reserved Kamila Andruszczak || Contact me: andruszczak.kamila@gmail.com | Skype: kamila.quanicmedia</p>
+                <p><bold>Thank you</bold> || @allRightsReserved <strong>Kamila Andruszczak</strong> || <strong>Contact me:</strong> andruszczak.kamila@gmail.com | Skype: kamila.quanicmedia</p>
             </div>
         </div>
     <script type="text/javascript" src="js/scripts.js"></script>

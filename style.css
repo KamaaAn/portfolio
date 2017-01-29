@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "Raleway", sans-serif;
     color: #757575;
+    position: relative;
 }
 
 h1 {
@@ -24,11 +25,20 @@ h1 {
     padding-right: 50px;
     color: #212121 !important;
 }
+
+.navbar-inverse .navbar-nav>.active>a {
+    background-color: transparent; !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: transparent; !important;
+}
+
 .navbar-nav>li>a:hover {
     color: #feea3b !important;
     transition: 0.5s;
 }
-.jumbotron{
+.jumbotron {
     position: relative;
     width: 100%;
     min-height: 550px;
@@ -38,7 +48,6 @@ h1 {
 }
 
 .jumbotron h1 {
-    font-size: 5.5em;
     margin: 0;
     color: #feea3b;
 }
@@ -48,14 +57,6 @@ h1 {
     font-weight: 300;
     margin: 0;
     color: #feea3b; 
-}
-
-.jumbotron .container{
-    margin: 0;
-    position: absolute;
-    text-align: right;
-    top: 20%;
-    left: 12%;
 }
 .skewmask-block {
     position: absolute;
@@ -75,7 +76,6 @@ h1 {
 
 figure {
     margin: 0;
-    width: 300px;
 }
 
 figure.effect-lily img {
@@ -90,20 +90,6 @@ figure.effect-lily img {
 	transform: translate3d(0, 10px, 0);
     cursor: pointer;
     box-shadow: 0px 6px 5px #ccc;
-}
-
-figure.effect-lily figcaption {
-	text-align: left;
-}
-
-figure.effect-lily:hover figure.effect-lily figcaption {
-	position: absolute;
-	bottom: 0;
-	left: 15px;
-	padding: 2em;
-	width: 300px;
-	height: 50%;
-    background-color: #bcbcbc;
 }
 
 figure.effect-lily h2 {
@@ -288,6 +274,13 @@ figure.effect-lily:hover p {
     margin-right: 7%;
 }
 
+.About-me .btn:hover {
+    background: #feea3b;
+    transform: scale(1.01);
+    transition: 1s;
+    border: none;
+}
+
 .About-me .btn .fa {
     color: #fff;
 }
@@ -369,6 +362,13 @@ input, textarea {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #757575;
+}
+
+#submit {
+    border-style: none !important;
 }
 
 .footer {
@@ -416,6 +416,183 @@ input, textarea {
     top: -30%;
     transform: skewY(-4deg);
 }
+
+@media(min-width:1500px) {
+    .skewmask-block-footer,
+    .skewmask-block-footer2,
+    .skewmask-block-contact,
+    .skewmask-block-code,
+    .skewmask-block {
+        display: none;
+    }
+    .jumbotron h1 {
+        font-size: 6em !important;
+    }
+    
+}
+
+@media (min-width:1200px){
+    
+    .skewmask-block-footer {
+    position: absolute;
+    width: 100%;
+    height: 90;
+    background: #fff;
+    top: 0;
+    left: -5%;
+    top: -32%;
+    transform: skewY(3.5deg);
+    background-color: #fff;
+    }
+    .skewmask-block-footer2 {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #757575;
+    top: 0;
+    left: 0;
+    top: -35%;
+    transform: skewY(-4deg);
+    }
+    figure.effect-lily figcaption {
+	text-align: left;
+    }
+
+    figure.effect-lily:hover figure.effect-lily figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	padding: 2em;
+	width: 300px;
+	height: 50%;
+    background-color: #bcbcbc;
+    }
+    figure {
+       width: 300px; 
+    }
+    .jumbotron h1 {
+        font-size: 6em !important;
+    }
+}
+
+@media (min-width:992px){
+    
+.skewmask-block-footer {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background: #fff;
+    top: 0;
+    left: -5%;
+    top: -32%;
+    transform: skewY(3.5deg);
+    background-color: #fff;
+    }
+    .jumbotron .container {
+    margin: 0;
+    position: absolute;
+    text-align: right;
+    top: 20%;
+    left: 55%;
+    }
+    .jumbotron .container {
+    max-width: 40%;
+    }
+    .jumbotron h1 {
+        font-size: 5em;
+    }
+}
+
+@media(max-width:991px){
+    
+    figure.effect-lily p,
+    figure.effect-lily h2 {
+	opacity: 1;
+    }
+    figure.effect-lily {
+        padding-top: 20px;
+        text-align: center;
+    }
+    figure.effect-lily img {
+        max-width: 200px;
+    }
+    .skewmask-block-footer {
+    top: -15%;
+    }
+    .footer .container-btn {
+    padding-top: 5%;
+    }
+    .jumbotron .container {
+    max-width: 70%;
+    text-align: right;
+    padding-top: 10%;
+    margin-right: 10px;
+    }
+}
+
+@media(max-width:768px){
+    .jumbotron .container {
+    max-width: 100%;
+    }
+    .navbar-toggle {
+        background-color: #feea3b !important;
+        border-color: #feea3b !important;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #feea3b !important;
+    background-color: #feea3b !important;
+    }
+    .navbar-left p {
+    color: #000 !important;
+    padding-top: 10%;
+    padding-left: 1%;
+    font-size: 1.5em;
+    }
+    
+    .skewmask-block-footer,
+    .skewmask-block-footer2,
+    .skewmask-block-contact,
+    .skewmask-block-code,
+    .skewmask-block {
+        display: none;
+    }
+    .jumbotron h1 {
+    font-size: 4em;
+    color: #feea3b;
+    margin: 0;
+    }
+    .jumbotron .container {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+
+    }
+    figure.effect-lily p,
+    figure.effect-lily h2 {
+	opacity: 1;
+    }
+    figure.effect-lily {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .About-me h1, h2, p {
+        text-align: center;
+        padding-left: 0 !important;
+    }
+    .Contact .kama-photo {
+    margin-top: 5%;
+    margin-left: 30%;
+    }
+    .footer {
+    padding-top: 10% !important;
+    }
+    figure.effect-lily img {
+        max-width: 300px;
+    }
+}
+
+
 
 
 
